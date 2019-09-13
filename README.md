@@ -1,5 +1,5 @@
 # brightness
-Increase/decrease brightness, to be bound to key shortcuts 
+Increase/decrease brightness, designed to be bound to key shortcuts 
 
 Changes brightness of all connected monitors in software. This is to be used in the case where `xbacklight` fails. 
 
@@ -14,4 +14,12 @@ Changes brightness of all connected monitors in software. This is to be used in 
        +n      Increase brightness by n.
        -n      Decrease brightness by n.
                No argument shows current brightness level.
+## Installation
 
+1. wget https://github.com/hackerb9/brightness/raw/master/brightness
+1. chmod 755 brightness
+1. sudo mv brightness /usr/local/bin/
+
+## See also sarmad
+
+I've also written a program called [sarmad](https://github.com/hackerb9/sarmad) which works for external monitors using the built-in brightness keys on laptops. It monitors the brightness of the internal backlight and replicates that. 
