@@ -1,7 +1,9 @@
 # brightness
-Increase/decrease brightness, designed to be bound to key shortcuts 
-
 Changes brightness of all connected monitors in software. This is to be used in the case where `xbacklight` fails. 
+It was designed to be bound to keyboard shortcuts.
+
+<img src="https://i.stack.imgur.com/R5wQz.png">
+
 
 ## Examples
     brightness 75
