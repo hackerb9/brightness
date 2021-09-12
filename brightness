@@ -1,6 +1,6 @@
 #!/bin/bash
 # brightness: Change all monitors brightness in software.
-# by hackerb9, 2019
+# by hackerb9, 2019,2021
 
 # Examples:  brightness 75;  brightness -10; brightness +10
 # Usage:
@@ -11,7 +11,7 @@
 #		No argument shows current brightness level.
 
 b=$(xrandr --current --verbose | grep Brightness)
-b=${b#*: }			# Remove "Brightness: "
+b=${b##*: }			# Remove "Brightness: "
 b=${b#0.}			# 0.30 --> 30
 [[ $b == "1.0" ]] && b="100"
 case $1 in
